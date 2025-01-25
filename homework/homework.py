@@ -89,6 +89,7 @@ import numpy as np
     # Elimine los registros con informacion no disponible.
     #datos = datos.dropna()
     #datos = datos[(datos["EDUCATION"]!=0) & (datos['MARRIAGE']!=0)]
+    #df['EDUCATION'] = df['EDUCATION'].apply(lambda x: 4 if x > 4 else x)
 
     # Para la columna EDUCATION, valores > 4 indican niveles superiores de educación, agrupe estos valores en la categoría "others"
     #datos["EDUCATION"] = datos["EDUCATION"].apply(agrupar_educaciones)
